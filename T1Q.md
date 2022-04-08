@@ -66,4 +66,52 @@
 
         > Correct. This difficulty in detection leaves the computer open to misuse over a long period of time by the attacker.
 
+## Lesson 3 Malware analysis
+
+### Malware analysis
+
+1. The two types of malware analysis are:
+
+    - [x] Static
+
+    - [ ] Botnet
+
+    - [ ] Hashing
+
+    - [x] Dynamic
+
+    - [ ] Virus
+
+2. How can 'hashing' be used to detect infected files during static analysis?
+
+    - [ ] The suspect file is scanned using anti-virus software. This produces a hash. The hash is compared to examples in a database. If the hash matches an entry in the database, the file is infected.
+
+    - <span style="color:mediumPurple">[ ] A hashing algorithm, such as MD5, is run against a suspect file. This hash (unique string) is compared to that of a clean file. If they are the same, then the suspect file is infected.
+
+    - <span style="color:salmon">[ ] Strings from a clean file and a suspect file are compared. If they are different then they are run through a hashing algorithm. If they are different, then the suspect file is infected.</span>
+
+    - [x] A hashing algorithm, such as MD5, is run against a suspect file. A check against a known database of bad hashes will help to find if a file is malicious
+
+### Keep safe
+
+1. Dynamic Analysis is useful because...
+
+    - <span style="color:salmon">[ ] It allows a security professional to work out how much damage the malware could potentially do.</span>
+
+    - [x] It allows a security professional to detect malware that can evade static analysis.
+
+    - <span style="color:salmon">[ ] It allows a security professional to determine the signature of the malware, so it can be identified later.</span>
+
+    - [x] It allows a security professional to discover the functionality of the malware.
+
+2. Do you have up-to-date anti-virus protection on your computer at home or at work? If not, why not? Has the material you've covered in this topic made you think any differently about your security software on your devices at all? How?
+
+    - No, simply because they usually cost money and I don't really understand the differences when choosing one. 
+
+
+
+
+
+
+
 
