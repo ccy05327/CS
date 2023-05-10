@@ -62,3 +62,22 @@
     - [ ] Bot, Hunter, Killer.
 
     - [ ] Scout, Recruiter, Commander, Messenger.
+
+## Wireless networking standards
+
+1. Wireless networks are newer and, therefore, more secure than wired networks.
+
+    - [x] FALSE
+    > Correct. There are more access points, more ways to intercept any data transmitted, all without the added inconvenience of needing access to the wired network within a building.
+    - [ ] TRUE
+
+2. What is the single best way to protect yourself from wireless hacking?
+
+    - [ ] Strong encryption (using WEP).
+
+    - [ ] Use a strong password generator.
+
+    - [ ] Change your login details frequently.
+
+    - [x] Strong encryption (using WPA2).
+        > Correct. WEP is weak enough to be broken in under five minutes and no longer provides much protection in the modern-age of wireless telecommunications. Use WPA2 as a minimum instead.

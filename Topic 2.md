@@ -18,8 +18,7 @@ Network security is a set of policies and practices that protect a network, cons
 
 ### Reading
 
-- ([Original Source](https://ieeexplore.ieee.org/document/6152082)) [K. S. Wilson, Conflicts Among the Pillars of Information Assurance](./Readings/Conflicts%20Among%20the%20Pillars%20of%20Information%20Assurance.pdf)
-    [Markdown ver.](/Readings/Conflicts%20Among%20the%20Pillars%20of%20Information%20Assurance.md)
+- ([Original Source](https://ieeexplore.ieee.org/document/6152082)) [K. S. Wilson, Conflicts Among the Pillars of Information Assurance](./Readings/Conflicts%20Among%20the%20Pillars%20of%20Information%20Assurance.pdf), [Markdown ver.](/Readings/Conflicts%20Among%20the%20Pillars%20of%20Information%20Assurance.md)
 
     > **Summary**
     > Interactions between the five pillars of information assurance (availability, integrity, authentication, confidentiality, and nonrepudiation) can cause conflicts. Efforts to advance one pillar can interfere with another. Availability can conflict with confidentiality, integrity, and authentication. Confidentiality and integrity are facets of controlled information access. Understanding these conflicts can help identify situations where mitigation of one type of risk might increase another. Proposed measures should be analyzed to determine whether risk trade-offs are acceptable.
@@ -50,3 +49,26 @@ Network security is a set of policies and practices that protect a network, cons
 - IoT devices include a wide range of devices, such as refrigerators, doorbells, and security cameras.
 - The case study of the Mirai botnet shows how a real botnet operates
     > ... the most prominent Mirai DDoS attact was on DNW provider Dyn, resulting in inaccessibility of serveral high-profile websites such as GitHub, Twitter, Reddit, Netflix and many others. After analysis, Dyn estimated that there were up to 100,000 malicious endpoints involved in the attact
+
+## Wireless attacts: WiFi attact vectors
+
+- The Wifi Alliance is an organization of companies producing wireless technology, which aims to ensure compatibility between wireless devices.
+- The history of wireless network protocols and security is briefly discussed, focusing on major hardware iterations of wireless standards, such as 802.11a and 802.11b.
+- Four different attacks on wireless networks are described.
+The lecture advises that an understanding of cryptography is necessary to fully comprehend the attacks and recommends reading on the subject.
+- Security protocols within wireless standards are also discussed, including the ill-fated WEP and later WPA, WPA2, and WPA3.
+- The lecture provides personal experience with wireless networks and experimenting with different network speeds and video codecs.
+- Manufacturers may release firmware updates to upgrade previous devices to support newer standards or security protocols
+
+## Readings
+
+**Classic paper reporting on WEP’s vulnerabilities**
+
+Scott R. Fluhrer, Itsik Mantin, and Adi Shamir. 2001. [Weaknesses in the Key Scheduling Algorithm of RC4](https://dl.acm.org/doi/10.5555/646557.694759). In Revised Papers from the 8th Annual International Workshop on Selected Areas in Cryptography (SAC '01). Springer-Verlag, Berlin, Heidelberg, 1–24.
+
+**This is a good (if a bit old) article about attack vectors for different Wifi protocols such as WEP, WPA and LEAP:**
+
+([PDF](/Readings/WiFi%20attack%20vectors.pdf)) Hal Berghel and Jacob Uecker. 2005. [WiFi attack vectors](https://dl.acm.org/doi/10.1145/1076211.1076229). Commun. ACM 48, 8 (August 2005), 21–28. DOI:<https://doi.org/10.1145/1076211.1076229>
+Very thorough review of security in different wireless technologies used in IoT devices:
+
+([PDF](/Readings/Attacks%20and%20Defenses%20in%20Short-Range%20Wireless%20Technologies%20for%20IoT.pdf)) K. Lounis and M. Zulkernine, "[Attacks and Defenses in Short-Range Wireless Technologies for IoT](https://ieeexplore.ieee.org/abstract/document/9090905)," in IEEE Access, vol. 8, pp. 88892-88932, 2020, doi: 10.1109/ACCESS.2020.2993553.
