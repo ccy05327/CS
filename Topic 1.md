@@ -153,56 +153,27 @@ Some research suggests Agent-Less are more efficient than Agent-Based sandboxes.
 
 ## Ethics
 
-We work with software on a daily basis. As such, we may be exposed to security issues and vulnerabilities as we work. It's a bit like being a driver a high-speed, you recognize it as a degree of risk. But you understand that risk and you know how to deal with them.
-
-You may have seen the term **responsible disclosure** used in the literature that you've engaged with. There is some subjectivity about what this means in real terms and there can be legal ramifications too.
-
-- Who's affected if there's an exploit available in a system?
-- What does that mean in real terms to human beings, to people who are using those systems?
-- What if this is a system that's in common usage, other people might suffer from the same vulnerability.
-
-If we find some exploit mechanism in our system that we weren't aware of before. It may be the case that somebody's already leveraged this in some way, and we haven't seen the activity.
-
-- Who do we have a responsibility to in this context, in terms of disclosing this issue and telling people about what's actually happening?
-
-Should we tell everybody, should we tell nobody? We have to make a decision about who to tell and how to tell them.
-
-Large corporations may encourage this behavior, they may will give you some money if you find a bug in their system. They may very closed down in that context and they may get very upset that you've exploited something in the system, even if it's a widely-known exploit.
-
-Most security researcher sits somewhere in the periphery in this term. So they want to let the companies know that there's a problem. They want to let the users know that their program, but then might be in terms of that problem bit of push and pull.
-
-- Who do I tell first?
-
-If I told the user, somebody else might exploit it. If I tell the company, they may get upset about it or they may take legal action.
-
-We also have to think about security in a distributed way. It's not just enough in terms of thinking about how you perceive things, but how other people perceive things in the world. Most of us now rely on cloud based services to deliver content and offer on demand computing. These systems are located all over the world and you might not even know where the server that you're using is located. We have to think about, well, if that information is somewhere else, can I guarantee it's security? Can I guarantee it's safety? If I have a server hosted somewhere else, I have to think about the legal ramifications of the data being stored on that server.
+- Ethics are important in computer security because there are wider content ramifications that can have a ripple effect on people and systems.
+- Computer scientists, data scientists, programmers, and software engineers may experience security issues and vulnerabilities on a daily basis and need to know how to deal with them.
+- Responsible disclosure is subjective and can have legal ramifications.
+- We have to consider who is affected by an exploit or vulnerability and decide who to tell and how to communicate the information.
+- Large corporations may institute bug bounties, which are incentives for people to find bugs in their system.
+- Most security researchers sit somewhere in the periphery of responsible disclosure, wanting to let companies know about the problem and the users about the program.
 
 ## Passwords
 
-I'm going to talk about how a particular exploitation might manifest and how it might cause problems later down the line.
-
-Designing truly secure systems is actually really, really hard work and we can't design anything that's perfectly secure. Given that most computational power is what we rely on to encode data then eventually there will come a time in which these powerful algorithms that we look at now, in the future, are no longer powerful enough to secure our systems.
-
-One of the most prolific leaks, they utilized an encryption technique wherein the same encryption key was used and the password had a one-to-one mapping. Every time a particular password was encoded, the encoded version always look the same and there was always a one-to-one mapping.
-
-With most good cryptography, it's all about pushing it in that one direction, it should be easy to encode but very, very difficult to decode. In this case, it means that the encrypted version always equates to the same thing. Let's look at why this might be a problem. Some people also used hints and the hints were stored in the database, in some cases, some of the hints were easy to figure out. It might be the case that one person has put a hint in there that's quite cryptic and very difficult to work out without knowing the person but if they share the same password as somebody else and they have put a hint in there that's easy to figure out that mapping goes both ways.
-
-Reusing passwords is a common problem in computer security and you're often advised not to reuse passwords and different services just in case one of them gets compromised.
-
-You have to be very careful in providing rules and functions that make sense to people that allow them to store passwords in a way in which they can understand and remember them but also they are secure and for their own benefit. You sometimes have to protect people from themselves. We can design systems to be more secure but these things also have implications. If we ask people to use longer passwords or passwords that are more difficult to guess, they might struggle to remember those passwords and, in those cases, we might also see security breaches come from that.
-
-A good system design has to balance accessibility with security and usability. We have to keep all of these things in mind when we're designing systems that are to be secure.
+- Designing secure systems is difficult and perfect security is impossible.
+- Data leaks are becoming more common and can be a means for making money.
+- There is a market for buying leaked data and zero-day exploits.
+- Reusing passwords is a common problem in computer security.
+- If one service gets compromised and a user's password is reused across multiple services, then every other service that user uses could potentially be compromised.
+- Systems should be designed with rules and functions that allow users to store passwords in a secure way that they can remember.
+- Sometimes, people need to be protected from themselves.
 
 ## Social Engineering
 
-- What does security infrastructure breaches look like
-- What are the manifestation of these attacks?
-- How are they launched?
-- How do people go about solving these issues when a system has been compromised in some way?
-
-Social engineering is actually one of the most common types of attack hackers, and it doesn't rely on technical manifestations of attacks. Not all staff in their company or necessarily trained to the same level of skills as some of us might be accustomed to.
-
-Now let's take a scenario, I find a USB drive on the floor, looks like somebody's lost this drive, or maybe it's one of my colleagues, or one of my friends who've lost their important data, of course, I don't want to leave it where somebody might find it, I don't want to leave that information somewhere, it might be pictures that are on there or other sensitive data relating to the business but I've got no way of identifying what that USB driver is and what's on it. I have to make a decision straight away and have to decide, well, what am I going to do? The quickest way to find out what's on the USB drive is to plug it into my system, now that might be problematic.
-
-Now let's take another example of this, we're all very technical and we all come across these things regularly and most of us at this point in time have enough training to know not to do these things and to know to be wary of these things. But what about if a police officer stops your industry and asked to see some identification? What do you do? In most cases, people would probably comply. Given that this is a figure of authority, you'd say, yes, I am who I am, there's my driver's license, there's my ID. But in this case, this is a scenario where you could have a similar example, you could have a person trying to get access to your information who isn't who they say they are and most of us probably wouldn't be able to look at a police ID and recognize whether or not that's authentic.
-
+- Securing systems involves considering human factors
+- Social engineering is a common type of attack that exploits people's trust
+- Privileged access should be scalable and controlled, and people should have access to information they need only
+- USB drive attacks involve leaving drives in public areas for people to pick up and plug into their systems, which can compromise the system
+- USB drives can be used as human interface devices to run malicious programs on the system
