@@ -72,3 +72,77 @@ Scott R. Fluhrer, Itsik Mantin, and Adi Shamir. 2001. [Weaknesses in the Key Sch
 Very thorough review of security in different wireless technologies used in IoT devices:
 
 ([PDF](/Readings/Attacks%20and%20Defenses%20in%20Short-Range%20Wireless%20Technologies%20for%20IoT.pdf)) K. Lounis and M. Zulkernine, "[Attacks and Defenses in Short-Range Wireless Technologies for IoT](https://ieeexplore.ieee.org/abstract/document/9090905)," in IEEE Access, vol. 8, pp. 88892-88932, 2020, doi: 10.1109/ACCESS.2020.2993553.
+
+
+## Learning objectives
+
+- Described three types of firewall and reason about the appropriate type of firewall to use for a given situation
+- Explain how Introsion Detection Systems work and give examples of historical and contemporary systems
+
+## Firewalls - our first line of defence
+
+### Stateless Firewall
+
+- aka Access Control Lists (ACL)
+- check all traffic passing through & apply rules to each packet
+> ACL checks packet characteristics like destination IP address or accessing a specific port to determine if it meets any rules.
+- somewhat inefficient (check all traffic individually)
+
+### Stateful Firewall
+
+- remember connections & allow future packets flow freely after initial connection is verified
+- more efficient especially in large networks
+
+### Proxy Firewall
+
+- act as intermediaries between the internal network (LAN) and the external network (WAN).
+> Machines in the LAN communicate with the proxy firewall, which retrieves data from external sources on their behalf.
+- provide enhanced security by isolating the internal network and only exposing the proxy server to external connections.
+-  can thoroughly check data for viruses and ensure the internal network's protection.
+
+## Intrusion Detection Systems (IDS)
+
+**Why do we need to detect intrusions?**
+
+> Most security experts agree that a completely secure system is impossible to achieve. So we must stay alert for attacks.
+> 
+> Kemmerer and Vigna, 2002
+
+**What is the best approach?**
+
+> The model is based on teh hypothesis that exploitation of a system's vulnerabilities involves abnormal use of the system; therefore, security violations could be detected from abnormal patterns of system usage.
+>
+> Denning, 1987
+
+
+### Challenges
+
+- Effectiveness: false positives, false negatives
+- Performance: resource use, speed
+- Ability to operate over a whole network
+
+**Early Systems (1970s-1980s)**: Dorothy Denning was a pioneer in IDS design, developing the concept of abnormal and normal behaviour profiles and detection in the IDES system
+
+**State-of-the-art (2019)** IDS systems now employ deep learning techniques, such as long short-term memory (LSTM) networks, to recognize patterns over time.
+
+IDS **datasets** are used to test and evaluate IDS performance, providing labeled data on network activities.
+
+**Commercial systems** like Cisco and Darktrace offer contrasting approaches to IDS, with Cisco using hardware-based analysis and Darktrace utilizing machine learning and AI.
+
+## Readings
+
+**Dorothy Denning’s classic paper about IDS**
+
+([PDF](/Readings/An%20Intrusion-Detection%20Model.pdf)) D. E. Denning, "[An Intrusion-Detection Model](https://ieeexplore.ieee.org/document/1702202),"
+
+**Overview on Intrusion Detection**
+
+([PDF](/Readings/Intrusion%20detection%20-%20a%20brief%20history%20and%20overview.pdf)) R. A. Kemmerer and G. Vigna, "[Intrusion detection: a brief history and overview](https://ieeexplore.ieee.org/document/1012428),"
+
+**A recent state of the art paper about IDS, using deep networks of course**
+
+([PDF](/Readings/A%20Novel%20Intrusion%20Detector%20Based%20on%20Deep%20Learning%20Hybrid%20Methods.pdf)) S. Wang, C. Xia and T. Wang, "[A Novel Intrusion Detector Based on Deep Learning Hybrid Methods](https://ieeexplore.ieee.org/document/8819467),"
+
+**The NSL-KDD dataset**
+
+https://www.unb.ca/cic/datasets/nsl.html
